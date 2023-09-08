@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.employeeschedulergui.AddEmployeeController">
+   <children>
+      <HBox prefHeight="205.0" prefWidth="650.0">
+         <children>
+            <VBox prefHeight="204.0" prefWidth="140.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+                     <VBox.margin>
+                        <Insets left="50.0" top="50.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+                     <VBox.margin>
+                        <Insets left="50.0" top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID">
+                     <VBox.margin>
+                        <Insets left="50.0" top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth">
+                     <VBox.margin>
+                        <Insets left="50.0" top="20.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox prefHeight="204.0" prefWidth="206.0">
+               <children>
+                  <TextField fx:id="firstName">
+                     <VBox.margin>
+                        <Insets top="45.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="lastName">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="employeeID">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <DatePicker fx:id="dob" editable="false" prefHeight="26.0" prefWidth="207.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </DatePicker>
+               </children>
+            </VBox>
+            <TextArea fx:id="messageArea" editable="false" prefHeight="189.0" prefWidth="320.0">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </TextArea>
+         </children>
+      </HBox>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Time Limitations (provide in 24hr time, 30 min increments):" wrappingWidth="330.2882537841797">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" />
+         </VBox.margin>
+      </Text>
+      <HBox prefHeight="141.0" prefWidth="689.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Sunday">
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="sunday1">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="sunday2">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Monday">
+                     <VBox.margin>
+                        <Insets left="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="monday1">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="monday2">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Tuesday">
+                     <VBox.margin>
+                        <Insets left="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="tuesday1">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="tuesday2">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Wednesday">
+                     <VBox.margin>
+                        <Insets left="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="wednesday1">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="wednesday2">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Thursday">
+                     <VBox.margin>
+                        <Insets left="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="thursday1">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="thursday2">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Friday">
+                     <VBox.margin>
+                        <Insets left="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="friday1">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="friday2">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Saturday">
+                     <VBox.margin>
+                        <Insets left="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="saturday1">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="saturday2">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="82.0" prefWidth="689.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addEmployee" text="Add Employee">
+               <HBox.margin>
+                  <Insets left="185.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#removeEmployee" text="Remove Employee">
+               <HBox.margin>
+                  <Insets left="100.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

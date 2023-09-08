@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.employeeschedulergui.EditStoreHoursController">
+   <children>
+      <HBox prefHeight="122.0" prefWidth="600.0">
+         <children>
+            <Text fx:id="storeLabel" strokeType="OUTSIDE" strokeWidth="0.0" text="Store Hours" textAlignment="CENTER" wrappingWidth="668.8811645507812">
+               <font>
+                  <Font name="Arial" size="39.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="50.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <TextArea fx:id="messageArea" prefHeight="166.0" prefWidth="600.0">
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+      </TextArea>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Store Hours (Provide in 24hr time, 30 min. increments)">
+         <VBox.margin>
+            <Insets left="5.0" top="5.0" />
+         </VBox.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+      <HBox prefHeight="136.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sunday" wrappingWidth="45.924964904785156">
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="sundayComboBox" onAction="#sundaySelect" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <TextField fx:id="sundayHours">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="40.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Monday">
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="mondayComboBox" onAction="#mondaySelect" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <TextField fx:id="mondayHours">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="40.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tuesday">
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="tuesdayComboBox" onAction="#tuesdaySelect" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <TextField fx:id="tuesdayHours">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="40.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Wednesday">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="wednesdayComboBox" onAction="#wednesdaySelect" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <TextField fx:id="wednesdayHours">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="40.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Thursday">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="thursdayComboBox" onAction="#thursdaySelect" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <TextField fx:id="thursdayHours">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="40.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Friday">
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="fridayComboBox" onAction="#fridaySelect" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <TextField fx:id="fridayHours">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="40.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Saturday">
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ComboBox fx:id="saturdayComboBox" onAction="#saturdaySelect" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <TextField fx:id="saturdayHours">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="40.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="125.0" prefWidth="669.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#updateHours" text="Update Hours">
+               <HBox.margin>
+                  <Insets left="200.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#changeStoreName" text="Change Store Name">
+               <HBox.margin>
+                  <Insets left="50.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
